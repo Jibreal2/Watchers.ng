@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account - Watchers.ng</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #001f3f; /* Dark blue */
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .create-account-container {
+            background-color: #ffffff; /* White */
+            color: #001f3f; /* Dark blue text */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+        .create-account-container img {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+        .create-account-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .create-account-container form {
+            display: flex;
+            flex-direction: column;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #001f3f;
+            border-radius: 5px;
+            outline: none;
+        }
+        .form-group input:focus {
+            border-color: #0056b3;
+            box-shadow: 0 0 5px rgba(0, 86, 179, 0.5);
+        }
+        .btn {
+            background-color: #001f3f; /* Dark blue */
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn:hover {
+            background-color: #0056b3; /* Lighter blue */
+        }
+        .alternate {
+            text-align: center;
+            margin-top: 15px;
+        }
+        .alternate a {
+            color: #001f3f;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .alternate a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="create-account-container">
+        <img src="Purple Friends Community Logo (1)" alt="Watchers.ng Logo">
+        <h2>Create Your Account</h2>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+            </div>
+            <button type="submit" class="btn">Create Account</button>
+        </form>
+        <div class="alternate">
+            <p>Already have an account? <a href="#">Login</a></p>
+        </div>
+    </div>
+</body>
+</html>
